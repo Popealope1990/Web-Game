@@ -1,3 +1,29 @@
 body {
     background-color: rgba(128, 128, 128, 0.712);
 }
+
+#welcomeBox {
+    display: flex;
+    border: 1px solid black;
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 10px;
+}
+
+#welcomeMessage {
+    position: absolute;
+    border: 1px dotted white;
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#startButton {
+    position: absolute;
+    
+    top: 100px;
+}
