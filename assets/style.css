@@ -63,3 +63,54 @@ body {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
 }
+
+#bottomBar {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rulesButton {
+    padding-left: 90px;
+}
+
+#rulesButton button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: rgba(211, 141, 11, 0.897);
+    color: white;
+    border: .5px solid grey;
+    box-shadow: 2px 2px black;
+}
+
+#leaderboardButton :hover {
+    background-color: rgba(255, 255, 255, 0.685);
+    color: rgba(187, 127, 17, 0.897);
+}
+
+
+#leaderboardButton {
+    padding-right: 90px;
+}
+
+#leaderboardButton button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: rgba(211, 141, 11, 0.897);
+    color: white;
+    border: .5px solid grey;
+    box-shadow: 2px 2px black;
+}
+
+#rulesButton :hover {
+    background-color: rgba(255, 255, 255, 0.685);
+    color: rgba(187, 127, 17, 0.897);
+}
