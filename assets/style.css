@@ -1,6 +1,6 @@
-body {
+/* body {
     /* background-color: rgba(128, 128, 128, 0.712); */
-}
+/* } */ 
 
 #welcomeBox {
     display: flex;
@@ -62,6 +62,7 @@ body {
 #startButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
+    cursor: pointer;
 }
 
 #bottomBar {
@@ -91,6 +92,7 @@ body {
 #leaderboardButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
+    cursor: pointer;
 }
 
 
@@ -113,4 +115,5 @@ body {
 #rulesButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
+    cursor: pointer;
 }
