@@ -1,10 +1,39 @@
-/* body {
-    /* background-color: rgba(128, 128, 128, 0.712); */
-/* } */ 
+    /* This is for the timer */
+
+.timer {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.timerWords {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    width: 200px;
+}
+
+.timerBox {
+    height: 100px;
+    width: 200px;
+    background-color: rgba(192, 188, 188, 0.836);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    width: 100%;
+    height: auto;
+}
+
+/* Loads when the webpage starts */
 
 #welcomeBox {
-    display: flex;
-    border: 1px solid black;
+    /* display: none; */
+    border: 2px solid black;
     height: 500px;
     width: 800px;
     position: absolute;
@@ -16,7 +45,6 @@
 
 #welcomeMessage {
     position: absolute;
-    /* border: 1px dotted white; */
     color: black;
     height: 50px;
     width: 100%;
@@ -35,7 +63,6 @@
 }
 
 #startButton {
-    border: 1px dased red;
     position: absolute;
     width: 100%;
     top: 200px;
