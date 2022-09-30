@@ -1,32 +1,48 @@
-    /* This is for the timer */
+    /* Main container styling */
+    /* Centering everything on page */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+} 
+ 
+ /* This is for the timer */
 
 .timer {
     position: absolute;
-    top: 20px;
+    top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.timerWords {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    width: 200px;
 }
 
 .timerBox {
     height: 100px;
     width: 200px;
     background-color: rgba(192, 188, 188, 0.836);
-    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timerWords, .time{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerWords {
+    padding-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .time {
-    width: 100%;
-    height: auto;
+   font-size: 50px;
+   font-weight: 600;
 }
 
 /* Loads when the webpage starts */
@@ -38,29 +54,30 @@
     width: 800px;
     position: absolute;
     top: 200px;
-    left: 600px;
     border-radius: 10px;
     background-color: rgba(192, 188, 188, 0.836);
     }
-
-#welcomeMessage {
+#welcomeMessage, #clickStart {
     position: absolute;
-    color: black;
-    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+#welcomeMessage {
+    color: black;
+    height: 50px;
     font-size: 25px;
 }
 
+    /* Notice to click start */
+
 #clickStart {
-    position: absolute;
     top: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
 }
+
+    /* Start button sytling */
 
 #startButton {
     position: absolute;
@@ -68,7 +85,14 @@
     top: 200px;
     display: flex;
     justify-content: center;
+}
 
+#rulesButton button, #leaderboardButton button, #startButton button{
+    color: white;
+    background-color: rgba(211, 141, 11, 0.897);
+    border-radius: 10px;
+    border: .5px solid grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #startButton  button{
@@ -78,19 +102,16 @@
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
-    background-color: rgba(211, 141, 11, 0.897);
-    color: white;
-    border: .5px solid grey;
     box-shadow: 5px 5px black;
 }
 
-#startButton :hover {
+#startButton :hover, #rulesButton :hover, #leaderboardButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
     cursor: pointer;
 }
+
+    /* Bottom nav bar  */
 
 #bottomBar {
     position: absolute;
@@ -100,47 +121,17 @@
     justify-content: space-between;
 }
 
+#rulesButton button, #leaderboardButton button {
+    height: 50px;
+    width: 100px;
+    font-size: 14px;
+    box-shadow: 2px 2px black;
+}
+
 #rulesButton {
     padding-left: 90px;
 }
 
-#rulesButton button {
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    background-color: rgba(211, 141, 11, 0.897);
-    color: white;
-    border: .5px solid grey;
-    box-shadow: 2px 2px black;
-}
-
-#leaderboardButton :hover {
-    background-color: rgba(255, 255, 255, 0.685);
-    color: rgba(187, 127, 17, 0.897);
-    cursor: pointer;
-}
-
-
 #leaderboardButton {
     padding-right: 90px;
-}
-
-#leaderboardButton button {
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    background-color: rgba(211, 141, 11, 0.897);
-    color: white;
-    border: .5px solid grey;
-    box-shadow: 2px 2px black;
-}
-
-#rulesButton :hover {
-    background-color: rgba(255, 255, 255, 0.685);
-    color: rgba(187, 127, 17, 0.897);
-    cursor: pointer;
 }

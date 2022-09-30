@@ -5,7 +5,7 @@
 ### The rules are simple
 1. To begin your TechXam press the start button
 2. Once you press the start button the timer will start counting down and the TechXam will begin
-3. You will have 5 minutes to complete the quiz
+3. You will have 2 minutes to complete the quiz
 4. Read each question and select your answer
 5. Once you have selected your answer it cannot be unselected
 6. Make sure to click the next button to move to the next question
