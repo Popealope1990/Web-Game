@@ -202,6 +202,11 @@ button {
         opacity: 00%;
         pointer-events: none;
     }
+
+.questContainer.activeInfo{
+    opacity: 100%;
+    pointer-events: auto;
+}
             
 
 #questCount {
@@ -250,6 +255,13 @@ button {
         font-size: 17px;
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .option:hover{
+        background-color: rgba(187, 127, 17, 0.897);
+        color: white;
+        opacity: 75%;
     }
 
         /* End of Quest page */
