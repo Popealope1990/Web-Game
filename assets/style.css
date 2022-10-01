@@ -1,14 +1,12 @@
 body {
     background-color: rgb(18, 204, 195);
+    display: flex;
+    justify-content: center;
 }
     
     
     /* Main container styling */
     /* Centering everything on page */
-.mainContainer {
-    display: flex;
-    justify-content: center;
-} 
  
  /* This is for the timer */
 
@@ -58,7 +56,7 @@ body {
 
 /* Loads when the webpage starts */
 
-#welcomeBox {
+.welcomeBox {
     border: 2px solid black;
     height: 500px;
     width: 800px;
@@ -66,8 +64,11 @@ body {
     top: 200px;
     border-radius: 10px;
     background-color: rgba(192, 188, 188, 0.836);
-    opacity: 100%;
-    /* pointer-events: none; */
+    }
+
+    .welcomeBox.welcomeInact{
+        display: none;
+        pointer-events: none;
     }
 
 #welcomeMessage, #clickStart, #rulesTitle {
@@ -93,7 +94,7 @@ body {
 
     /* Start button sytling */
 
-#startButton {
+.startButton {
     position: absolute;
     width: 100%;
     top: 200px;
@@ -109,7 +110,7 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#startButton  button{
+.startButton  button{
     display: flex;
     height: 100px;
     width: 200px;
@@ -119,7 +120,7 @@ button {
     box-shadow: 5px 5px black;
 }
 
-#startButton :hover, #rulesButton :hover, #leaderboardButton :hover, #leaderboardButton2 :hover, #MMButton :hover, #exitButton :hover, #continueButton :hover, #nameSubmitButton :hover {
+.startButton :hover, .rulesButton :hover, .leaderboardButton :hover, .MMButton :hover, .continueButton :hover, .nameSubmitButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
     cursor: pointer;
@@ -127,7 +128,7 @@ button {
 
     /* Bottom nav bar  */
 
-#welcomeBB, #rulesBB, #questBB {
+.bottomBar {
     position: absolute;
     bottom: 50px;
     width: 100%;
@@ -135,26 +136,24 @@ button {
     justify-content: space-between;
 }
 
-#rulesButton button, #leaderboardButton button, #leaderboardButton2 button, #MMButton button, #exitButton button, #continueButton button, #nameSubmitButton button {
+.rulesButton button, .leaderboardButton button, .MMButton button, .continueButton button, .nameSubmitButton button {
     height: 50px;
     width: 100px;
     font-size: 14px;
     box-shadow: 2px 2px black;
 }
 
-#rulesButton, #MMButton, #exitButton {
+.rulesButton, .MMButton {
     padding-left: 90px;
 }
 
-#leaderboardButton, #leaderboardButton2, #continueButton {
+.leaderboardButton, .continueButton {
     padding-right: 90px;
 }
 
-    /* end of main menu */
-
     /* Rules page */
 
-#rulesBox {
+.rulesBox {
     border: 2px solid black;
     height: 500px;
     width: 800px;
@@ -165,6 +164,11 @@ button {
     opacity: 00%;
     pointer-events: none;
     }
+
+.rulesBox.activeInfo{
+    opacity: 100%;
+    pointer-events: auto;
+}
 
 #rulesTitle {
         font-size: 40px;
@@ -187,7 +191,7 @@ button {
         /* end of rules box */
         /* begining of questions box */
 
-#questContainer {
+.questContainer {
         border: 2px solid black;
         height: 500px;
         width: 800px;
@@ -251,7 +255,7 @@ button {
         /* End of Quest page */
         /* Begin results page */
 
-    #resultsMainContainer {
+    .resultsMainContainer {
         border: 2px solid black;
         height: 500px;
         width: 800px;
@@ -313,9 +317,6 @@ button {
         padding: 0px 2px;
     }
 
-    .nameSubmitForm {
-        
-    }
 
     .form {
         padding-top: 20px;
@@ -324,7 +325,7 @@ button {
         justify-content: center;
     }
 
-#nameSubmitButton {
+.nameSubmitButton {
         padding-top: 25px;
         width: 100%;
         display: flex;
