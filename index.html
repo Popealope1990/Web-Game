@@ -137,21 +137,45 @@
 
 
 
-        <div id="resultsContainer">
+        <div id="resultsMainContainer">
 
             <div id="compMessage">
                 <p>Great Job! you have completed the quiz!</p>
                 <p>Please enter your name and press submit!</p>
             </div>
 
-            <div id="results">
+            <div id="resultsContainer">
 
-                <div id="correctQuests"></div>
+                <div id="results">
 
-                <div id="timeLeft"></div>
+                    <div class="resultsTotals">
+                        <span><p>Correct Questions =</p><p class="questPoints">0</p><p>Points</p></span>
+                    </div>
 
-                <div id="resultsTotal"></div>
-            </div>
+                    <div class="resultsTotals">
+                        <span><p>Remaing Time Bonus =</p><p class="timePoints">0</p><p>Points</p></span>
+                    </div>
+
+                    <div class="resultsTotals">
+                        <span><p class="questPoints">0</p><p>+</p><p class="timePoints">0</p><p>=</p><p id="totalPoints">0</p><p>Total Points</p></span>
+                    </div>
+
+                    <div class="nameSubmitForm">
+
+                        <div class="form">
+                            <label for="name">Enter your name: </label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+
+                        <div id="nameSubmitButton">
+                            <button>Submit</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+            </div>    
 
         </div>
         

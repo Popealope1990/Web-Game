@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(18, 204, 195);
+}
+    
+    
     /* Main container styling */
     /* Centering everything on page */
 .mainContainer {
@@ -47,7 +52,7 @@
    background-color: rgba(187, 127, 17, 0.897);
    color: white;
    height: 60px;
-   width: 120px;
+   width: 130px;
    border-radius: 10px;
 }
 
@@ -61,8 +66,8 @@
     top: 200px;
     border-radius: 10px;
     background-color: rgba(192, 188, 188, 0.836);
-    opacity: 00%;
-    pointer-events: none;
+    opacity: 100%;
+    /* pointer-events: none; */
     }
 
 #welcomeMessage, #clickStart, #rulesTitle {
@@ -114,7 +119,7 @@ button {
     box-shadow: 5px 5px black;
 }
 
-#startButton :hover, #rulesButton :hover, #leaderboardButton :hover, #leaderboardButton2 :hover, #MMButton :hover, #exitButton :hover, #continueButton :hover{
+#startButton :hover, #rulesButton :hover, #leaderboardButton :hover, #leaderboardButton2 :hover, #MMButton :hover, #exitButton :hover, #continueButton :hover, #nameSubmitButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
     cursor: pointer;
@@ -130,7 +135,7 @@ button {
     justify-content: space-between;
 }
 
-#rulesButton button, #leaderboardButton button, #leaderboardButton2 button, #MMButton button, #exitButton button, #continueButton button {
+#rulesButton button, #leaderboardButton button, #leaderboardButton2 button, #MMButton button, #exitButton button, #continueButton button, #nameSubmitButton button {
     height: 50px;
     width: 100px;
     font-size: 14px;
@@ -157,7 +162,7 @@ button {
     top: 200px;
     border-radius: 10px;
     background-color: rgba(192, 188, 188, 0.836);
-    opacity: 0%;
+    opacity: 00%;
     pointer-events: none;
     }
 
@@ -243,7 +248,10 @@ button {
         justify-content: space-between;
     }
 
-    #resultsContainer {
+        /* End of Quest page */
+        /* Begin results page */
+
+    #resultsMainContainer {
         border: 2px solid black;
         height: 500px;
         width: 800px;
@@ -251,15 +259,13 @@ button {
         top: 200px;
         border-radius: 10px;
         background-color: rgba(192, 188, 188, 0.836);
-        opacity: 100%;
+        opacity: 00%;
+        pointer-events: none;
     }
 
     #compMessage {
         width: 100%;
         height: 120px;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
         text-align: center;
     }
 
@@ -269,7 +275,60 @@ button {
 
     #compMessage :first-child {
         margin-top: 10px;
+        margin-bottom: -10px;
         font-size: 30px;
-
     }
-      
+
+    #resultsContainer {
+        width: 100%;
+        height: 275px;
+        margin-top: -15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #results {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 400px;
+        height: 275px;
+        box-shadow: 3px 4px black;
+    }
+
+    .resultsTotals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+.resultsTotals span {
+        display: flex;
+    }
+
+    .resultsTotals span p {
+        padding: 0px 2px;
+    }
+
+    .nameSubmitForm {
+        
+    }
+
+    .form {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+#nameSubmitButton {
+        padding-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+    /* end of Completed quiz page */
