@@ -17,7 +17,7 @@
                     <p>Remaining Time</p>
                 </div>
                 <div class="time">
-                    <p>2:00</p>
+                    <p class="min">05</p><p>:</p><p class="sec">00</p>
                 </div>
             </div>
         </div>
@@ -31,15 +31,15 @@
                 <h2>Welcome to TechXam</h2>
             </div>
 
-            <div id="clickStart">
-                <p>Make sure to read the rules before begining, click Start to begin.</p>
-            </div>
+                <div id="clickStart">
+                    <p>Make sure to read the rules before begining, click Start to begin.</p>
+                </div>
 
-            <div id="startButton">
-                <button>Start</button>
-            </div>
+                <div id="startButton">
+                    <button>Start</button>
+                </div>
 
-            <div id="WelcomeBB">
+            <div id="welcomeBB">
 
                 <div id="rulesButton">
                     <button>Rules</button>
@@ -53,8 +53,10 @@
 
         </div>
                 <!-- End of Home screen -->
-                <!-- Begining of rules box -->
+                <!-- Begining of rules screen -->
+
         <div id="rulesBox">
+
             <div id="rulesTitle">
                 <p>TechXam Rules</p>
             </div>
@@ -62,17 +64,16 @@
             <div id="rules">
                 <p>1. To begin your TechXam press the start button</p>
                 <p>2. Once you press the start button the timer will start counting down and the TechXam will begin</p>
-                <p>3. You will have 2 minutes to complete the quiz</p>
+                <p>3. You will have 5 minutes to complete the quiz</p>
                 <p>4. Read each question and select your answer</p>
                 <p>5. Once you have selected your answer it cannot be unselected</p>
                 <p>6. Make sure to click the next button to move to the next question</p>
-                <p>7. If you answer the question correctly the timer will stop counting for 10 seconds while you proceed with the quiz</p>
-                <p>8. If you answer the question incorrectly you will have to wait 5 seconds before you can press the next button</p>
-                <p>9. There will be 15 total questions</p>
-                <p>10. The questions will come from 3 main categories [Engine, Hydraulic, Electrical]</p>
-                <p>11. You will have 5 questions from each category to make up the 15 questions</p>
-                <p>12. Once the final question has been answered the timer will run for 5 seconds or stop based upon if the question was answered correctly or not.</p>
-                <p>13. Enter a name for the leaderboard then click submit.</p>
+                <p>7. You will earn 10 points for ever correct answer</p>
+                <p>8. There will be 15 total questions</p>
+                <p>9. The questions will come from 3 main categories [Engine, Hydraulic, Electrical]</p>
+                <p>10. You will have 5 questions from each category to make up the 15 questions</p>
+                <p>11. Once the final question has been answered the timer will stop, The remaining time will be added into your score as a bonus.</p>
+                <p>12. Enter a name for the leaderboard then click submit.</p>
             </div>
 
             <div id="rulesBB">
@@ -85,12 +86,83 @@
                     <button>Leaderboard</button>
                 </div>
 
+            </div>
+        </div>
+
+        <div id="questContainer">
+                
+            <div id="questCount">
+                <span><p>Question</p><p>1</p><p>of</p><p>15</p></span>
+            </div>
+
+            <div class="question">
+                <span>Random question?</span>
+            </div>
+
+            <div class="optionList">
+
+                <div class="option">
+                    <span>Random Answer 1</span>
+                </div>
+
+                <div class="option">
+                    <span>Random Answer 2</span>
+                </div>
+
+                <div class="option">
+                    <span>Random Answer 3</span>
+                </div>
+
+                <div class="option">
+                    <span>Random Answer 4</span>
+                </div>
+
+
+            </div>
+
+            <div id="questBB">
+
+                <div id="exitButton">
+                    <button>Exit Quiz</button>
+                </div>
+
+                <div id="continueButton">
+                    <button>Continue</button>
+                </div>
+
+            </div>
+    
         </div>
 
 
 
 
+        <div id="resultsContainer">
+
+            <div id="compMessage">
+                <p>Great Job! you have completed the quiz!</p>
+                <p>Please enter your name and press submit!</p>
+            </div>
+
+            <div id="results">
+
+                <div id="correctQuests"></div>
+
+                <div id="timeLeft"></div>
+
+                <div id="resultsTotal"></div>
+            </div>
+
+        </div>
+        
+
     </div>
+
+   
+
+     
+           
+   
 
         <!-- Script tags -->
     <script src="index.js"></script>
