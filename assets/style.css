@@ -209,7 +209,7 @@ button {
 }
             
 
-#questCount {
+.questCount {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -220,11 +220,11 @@ button {
         pointer-events: none;
     }
 
-#questCount span {
+.questCount span {
         display: flex;
     }
 
-#questCount span p {
+.questCount span p {
         padding: 0px 3px;
     }
     
