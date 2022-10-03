@@ -102,6 +102,7 @@ body {
     justify-content: center;
 }
 
+
 button {
     color: white;
     background-color: rgba(211, 141, 11, 0.897);
@@ -136,6 +137,16 @@ button {
     justify-content: space-between;
 }
 
+.welcomeBox .bottomBar{
+    display: flex;
+    justify-content: center;
+}
+
+.resultsMainContainer .bottomBar{
+    display: flex;
+    justify-content: center;
+}
+
 .rulesButton button, .leaderboardButton button, .MMButton button, .continueButton button, .nameSubmitButton button {
     height: 50px;
     width: 100px;
@@ -143,12 +154,25 @@ button {
     box-shadow: 2px 2px black;
 }
 
-.rulesButton, .MMButton {
+.MMButton {
     padding-left: 90px;
+}
+
+.resultsMainContainer .bottomBar .MMButton{
+    padding: 0px;
 }
 
 .leaderboardButton, .continueButton {
     padding-right: 90px;
+}
+
+button.contButton.active{
+    opacity: 100%;
+}
+
+button.contButton.inactive{
+    opacity: 0%;
+    pointer-events: none;
 }
 
     /* Rules page */
@@ -258,6 +282,22 @@ button {
         cursor: pointer;
     }
 
+    .option.correct {
+        color: green;
+        background: rgb(171, 235, 171);
+        border-color: rgb(23, 185, 23);
+    }
+
+    .option.incorrect{
+        color: rgb(51, 4, 4);
+        background: rgb(223, 117, 117);
+        border-color: red;
+    }
+
+    .option.disabled{
+        pointer-events: none;
+    }
+
     .option:hover{
         background-color: rgba(187, 127, 17, 0.897);
         color: white;
@@ -267,7 +307,7 @@ button {
         /* End of Quest page */
         /* Begin results page */
 
-    .resultsMainContainer {
+.resultsMainContainer {
         border: 2px solid black;
         height: 500px;
         width: 800px;
@@ -279,31 +319,35 @@ button {
         pointer-events: none;
     }
 
-    #compMessage {
+.resultsMainContainer.active {
+        opacity: 100%;
+        pointer-events: auto;
+    }
+
+#compMessage {
         width: 100%;
-        height: 120px;
+        height: 75px;
         text-align: center;
     }
 
-    #compMessage p {
+#compMessage p {
         font-size: 25px;
     }
 
-    #compMessage :first-child {
+#compMessage :first-child {
         margin-top: 10px;
         margin-bottom: -10px;
         font-size: 30px;
     }
 
-    #resultsContainer {
+#resultsContainer {
         width: 100%;
         height: 275px;
-        margin-top: -15px;
         display: flex;
         justify-content: center;
     }
 
-    #results {
+ #results {
         border: 1px solid black;
         border-radius: 10px;
         width: 400px;
@@ -311,7 +355,7 @@ button {
         box-shadow: 3px 4px black;
     }
 
-    .resultsTotals {
+.resultsTotals {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -323,14 +367,23 @@ button {
 
 .resultsTotals span {
         display: flex;
+        padding-top: 100px;
     }
 
-    .resultsTotals span p {
+.resultsTotals span p {
         padding: 0px 2px;
     }
 
+.resultsMessage {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
 
-    .form {
+
+    /* .form {
         padding-top: 20px;
         width: 100%;
         display: flex;
@@ -342,6 +395,6 @@ button {
         width: 100%;
         display: flex;
         justify-content: center;
-}
+} */
 
     /* end of Completed quiz page */

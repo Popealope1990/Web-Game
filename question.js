@@ -42,7 +42,7 @@ let questions = [
             "carburetion, hybridization, electrical charging",
             "carburetion, port fuel injection, direct fuel injection",
             "fuel injection, infusion, circulation",
-            "red, green, yellow"
+            "pump, gravity, funnel and a fuel can"
         ]
     },
     {
@@ -113,7 +113,7 @@ let questions = [
     },
     {
         numb: 11,
-        question: "A single acting cylinder can be pressurized:",
+        question: "Single acting cylinders can be pressurized:",
         answer: "from one direction",
         options: [
             "only once",
