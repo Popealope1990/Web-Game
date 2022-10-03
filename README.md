@@ -4,18 +4,16 @@
 ---
 ### The rules are simple
 1. To begin your TechXam press the start button
-2. Once you press the start button the timer will start counting down and the TechXam will begin
-3. You will have 2 minutes to complete the quiz
-4. Read each question and select your answer
-5. Once you have selected your answer it cannot be unselected
-6. Make sure to click the next button to move to the next question
-7. If you answer the question correctly the timer will stop counting for 10 seconds while you proceed with the quiz
-8. If you answer the question incorrectly you will have to wait 5 seconds before you can press the next button
-9. The goal is to complete the quiz with as much time left on the timer as possible
-10. There will be 15 total questions
-11. The questions will come from 3 main categories [Engine, Hydraulic, Electrical]
-12. You will have 5 questions from each category to make up the 15 questions
-13. Once the final question has been answered the timer will run for 5 seconds or stop based upon if the question was answered correctly or not.
-14. Enter a name for the leaderboard then click submit.
+2. Read each question and select your answer
+3. Once you have selected your answer it cannot be unselected
+4. Make sure to click the continue button to move to the next question
+5. The goal is to complete the quiz with as many correct answers as possible
+6. There will be 15 total questions
+7. The questions will come from 3 main categories [Engine, Hydraulic, Electrical]
+8. You will have 5 questions from each category to make up the 15 questions
+9. Once the final question has been answered the results page will display how many questions you got correct
+10. If at any point during the quiz you press exit quiz everything will be reset and your score will be lost
+11. You can take the quiz as many times as youd like by simply hitting the main menu button at the end.  The questions will reset and you can retry
+12. Have fun and thanks for playing!
 
-
+This game originally was going to have extra items put in that I will come back to but due to time constraints I limited the game to what it is now.

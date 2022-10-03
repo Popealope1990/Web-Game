@@ -147,6 +147,11 @@ button {
     justify-content: center;
 }
 
+.rulesBox .bottomBar{
+    display: flex;
+    justify-content: center;
+}
+
 .rulesButton button, .leaderboardButton button, .MMButton button, .continueButton button, .nameSubmitButton button {
     height: 50px;
     width: 100px;
@@ -161,6 +166,11 @@ button {
 .resultsMainContainer .bottomBar .MMButton{
     padding: 0px;
 }
+
+.rulesBox .bottomBar .MMButton{
+    padding: 0px;
+}
+
 
 .leaderboardButton, .continueButton {
     padding-right: 90px;
@@ -204,12 +214,12 @@ button.contButton.inactive{
         position: absolute;
         top: 80px;
         left: 20px;
-        font-size: 16.5px;
+        font-size: 17px;
         font-weight: 600;
     }
 
 #rules p{
-       margin: 1px;
+       margin: 2px;
     }
 
         /* end of rules box */
