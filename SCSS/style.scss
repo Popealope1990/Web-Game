@@ -1,0 +1,12 @@
+@import "config";
+@import "utilities";
+@import "btnConfig";
+@import "welcome";
+
+
+.welcomeBox {
+    .bottomBar {
+        display: flex;
+        justify-content: center;
+    }
+}

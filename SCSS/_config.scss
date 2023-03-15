@@ -1,0 +1,28 @@
+$primary-color: rgb(18, 204, 195);
+$secondary-color: rgba(192, 188, 188, 0.836);
+$border1: 1px solid black;
+$border2: 2px solid black;
+ 
+
+@mixin class-clean-up {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin button-hover {
+    background-color: rgba(255, 255, 255, 0.685);
+    color: rgba(187, 127, 17, 0.897);
+    cursor: pointer;
+}
+
+@mixin bottom-bar-setup {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin inactive {
+    display: none;
+    pointer-events: none;
+}

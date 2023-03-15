@@ -1,0 +1,29 @@
+button {
+    color: white;
+    background-color: rgba(211, 141, 11, 0.897);
+    border-radius: 10px;
+    border: .5px solid grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.startButton {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+
+    button{
+        display: flex;
+        height: 100px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        box-shadow: 5px 5px black;
+    }
+}
+
+.startButton :hover, .rulesButton :hover, .leaderboardButton :hover, .MMButton :hover, .continueButton :hover, .nameSubmitButton :hover {
+    @include button-hover;
+}

@@ -1,0 +1,17 @@
+body {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomnBar {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcomeMessage, #clickStart, #rulesTitle {
+    @include class-clean-up;
+}

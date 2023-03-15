@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(18, 204, 195);
+  display: flex;
+  justify-content: center;
+}
+
+.bottomnBar {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#welcomeMessage, #clickStart, #rulesTitle {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  background-color: rgba(211, 141, 11, 0.897);
+  border-radius: 10px;
+  border: 0.5px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.startButton {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.startButton button {
+  display: flex;
+  height: 100px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  box-shadow: 5px 5px black;
+}
+
+.startButton :hover, .rulesButton :hover, .leaderboardButton :hover, .MMButton :hover, .continueButton :hover, .nameSubmitButton :hover {
+  background-color: rgba(255, 255, 255, 0.685);
+  color: rgba(187, 127, 17, 0.897);
+  cursor: pointer;
+}
+
+.welcomeBox {
+  border: 2px solid black;
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  top: 200px;
+  border-radius: 10px;
+  background-color: rgba(192, 188, 188, 0.836);
+}
+.welcomeBox .bottomBar {
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeBox.welcomeInact {
+  display: none;
+  pointer-events: none;
+}
+
+#welcomeMessage {
+  color: black;
+  height: 50px;
+  font-size: 25px;
+}
+
+#clickStart {
+  top: 100px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.welcomeBox .bottomBar {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

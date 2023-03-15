@@ -1,0 +1,16 @@
+{
+  "name": "web-game-milestone",
+  "version": "1.0.0",
+  "description": "---\r ### The rules are simple\r 1. To begin your TechXam press the start button\r 2. Read each question and select your answer\r 3. Once you have selected your answer it cannot be unselected\r 4. Make sure to click the continue button to move to the next question\r 5. The goal is to complete the quiz with as many correct answers as possible\r 6. There will be 15 total questions\r 7. The questions will come from 3 main categories [Engine, Hydraulic, Electrical]\r 8. You will have 5 questions from each category to make up the 15 questions\r 9. Once the final question has been answered the results page will display how many questions you got correct\r 10. If at any point during the quiz you press exit quiz everything will be reset and your score will be lost\r 11. You can take the quiz as many times as youd like by simply hitting the main menu button at the end.  The questions will reset and you can retry\r 12. Have fun and thanks for playing!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}

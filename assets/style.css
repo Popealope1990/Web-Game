@@ -1,16 +1,16 @@
-body {
+/* body {
     background-color: rgb(18, 204, 195);
     display: flex;
     justify-content: center;
 }
-    
+     */
     
     /* Main container styling */
     /* Centering everything on page */
  
  /* This is for the timer */
 
-.timer {
+/* .timer {
     position: absolute;
     top: 50px;
     width: 100%;
@@ -52,11 +52,11 @@ body {
    height: 60px;
    width: 130px;
    border-radius: 10px;
-}
+} */
 
 /* Loads when the webpage starts */
 
-.welcomeBox {
+/* .welcomeBox {
     border: 2px solid black;
     height: 500px;
     width: 800px;
@@ -66,12 +66,12 @@ body {
     background-color: rgba(192, 188, 188, 0.836);
     }
 
-    .welcomeBox.welcomeInact{
+.welcomeBox.welcomeInact{
         display: none;
         pointer-events: none;
-    }
+    } */
 
-#welcomeMessage, #clickStart, #rulesTitle {
+/* #welcomeMessage, #clickStart, #rulesTitle {
     position: absolute;
     width: 100%;
     display: flex;
@@ -82,36 +82,36 @@ body {
     color: black;
     height: 50px;
     font-size: 25px;
-}
+} */
 
     /* Notice to click start */
 
-#clickStart {
+/* #clickStart {
     top: 100px;
     font-size: 22px;
     font-weight: 600;
-}
+} */
 
     /* Start button sytling */
 
-.startButton {
+/* .startButton {
     position: absolute;
     width: 100%;
     top: 200px;
     display: flex;
     justify-content: center;
-}
+} */
 
 
-button {
+/* button {
     color: white;
     background-color: rgba(211, 141, 11, 0.897);
     border-radius: 10px;
     border: .5px solid grey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
-.startButton  button{
+/* .startButton  button{
     display: flex;
     height: 100px;
     width: 200px;
@@ -119,28 +119,28 @@ button {
     align-items: center;
     font-size: 35px;
     box-shadow: 5px 5px black;
-}
+} */
 
-.startButton :hover, .rulesButton :hover, .leaderboardButton :hover, .MMButton :hover, .continueButton :hover, .nameSubmitButton :hover {
+/* .startButton :hover, .rulesButton :hover, .leaderboardButton :hover, .MMButton :hover, .continueButton :hover, .nameSubmitButton :hover {
     background-color: rgba(255, 255, 255, 0.685);
     color: rgba(187, 127, 17, 0.897);
     cursor: pointer;
-}
+} */
 
     /* Bottom nav bar  */
 
-.bottomBar {
+/* .bottomBar {
     position: absolute;
     bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.welcomeBox .bottomBar{
+/* .welcomeBox .bottomBar{
     display: flex;
     justify-content: center;
-}
+} */
 
 .resultsMainContainer .bottomBar{
     display: flex;
